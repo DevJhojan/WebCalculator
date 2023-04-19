@@ -1,22 +1,22 @@
 <div class="container">
-  <p class="textout">  </p>
+  <p class="textout"> {{answer}} </p>
   <div class="buttonsNumbers">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>0</button>
+    <button (click)="onAddkey($event)">1</button>
+    <button (click)="onAddkey($event)">2</button>
+    <button (click)="onAddkey($event)">3</button>
+    <button (click)="onAddkey($event)">4</button>
+    <button (click)="onAddkey($event)">5</button>
+    <button (click)="onAddkey($event)">6</button>
+    <button (click)="onAddkey($event)">7</button>
+    <button (click)="onAddkey($event)">8</button>
+    <button (click)="onAddkey($event)">9</button>
+    <button (click)="onAddkey($event)">0</button>
   </div>
   <div class="buttonsOparators">
-    <button> + </button>
-    <button> - </button>
-    <button> * </button>
-    <button> / </button>
+    <button (click)="onAddkey($event)"> + </button>
+    <button (click)="onAddkey($event)"> - </button>
+    <button (click)="onAddkey($event)"> * </button>
+    <button (click)="onAddkey($event)"> / </button>
   </div>
-  <button class="equal"> = </button>
+  <button class="equal" (click)="onAnswer()"> = </button>
 </div>

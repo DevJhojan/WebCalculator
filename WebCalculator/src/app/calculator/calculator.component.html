@@ -1,5 +1,5 @@
 <div class="container">
-  <p class="textout"> {{answer}} </p>
+  <input class="textout" type="text" disabled="false" value="{{answer}}">
   <div class="buttonsNumbers">
     <button (click)="onAddkey($event)">1</button>
     <button (click)="onAddkey($event)">2</button>
@@ -13,6 +13,7 @@
     <button (click)="onAddkey($event)">0</button>
   </div>
   <div class="buttonsOparators">
+    <button (click)="onClear()"> CE </button>
     <button (click)="onAddkey($event)"> + </button>
     <button (click)="onAddkey($event)"> - </button>
     <button (click)="onAddkey($event)"> * </button>

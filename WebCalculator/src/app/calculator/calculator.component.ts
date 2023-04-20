@@ -30,4 +30,8 @@ export class CalculatorComponent implements OnInit{
     this.answer = eval(this.answer);
     this.finish = true;
   }
+
+  onClear(){
+    this.answer = '';
+  }
 }
